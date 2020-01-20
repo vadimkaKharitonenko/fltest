@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/fltest/static/css/main.9b34b25a.chunk.css",
+    "main.js": "/fltest/static/js/main.85b7c8da.chunk.js",
+    "main.js.map": "/fltest/static/js/main.85b7c8da.chunk.js.map",
+    "runtime-main.js": "/fltest/static/js/runtime-main.1d4da0ae.js",
+    "runtime-main.js.map": "/fltest/static/js/runtime-main.1d4da0ae.js.map",
+    "static/js/2.da2080b5.chunk.js": "/fltest/static/js/2.da2080b5.chunk.js",
+    "static/js/2.da2080b5.chunk.js.map": "/fltest/static/js/2.da2080b5.chunk.js.map",
+    "index.html": "/fltest/index.html",
+    "precache-manifest.83c2d751c8259d1cc0b8e3f6c07d52e9.js": "/fltest/precache-manifest.83c2d751c8259d1cc0b8e3f6c07d52e9.js",
+    "service-worker.js": "/fltest/service-worker.js",
+    "static/css/main.9b34b25a.chunk.css.map": "/fltest/static/css/main.9b34b25a.chunk.css.map",
+    "static/js/2.da2080b5.chunk.js.LICENSE": "/fltest/static/js/2.da2080b5.chunk.js.LICENSE",
+    "static/media/App.css": "/fltest/static/media/SourceSansPro-Regular.d1f424dd.ttf",
+    "static/media/Card.css": "/fltest/static/media/card-bg.defc2f1b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1d4da0ae.js",
+    "static/js/2.da2080b5.chunk.js",
+    "static/css/main.9b34b25a.chunk.css",
+    "static/js/main.85b7c8da.chunk.js"
+  ]
+}
