@@ -1,0 +1,166 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 368px;
+  height: 212px;
+  padding: 20px;
+  border-radius: 18px;
+  background: url('../../assets/images/card-bg.jpg'), rgba(23, 19, 38, .4);
+  background-size: cover, cover;
+  background-position: 50% 50%, 50% 50%;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  width: 108px;
+  height: 108px;
+  background: linear-gradient(71.64deg, #C81434 0%, #C8961E 100%);
+  border-radius: 50%;
+  transition: .3s ease-in-out;
+}
+
+.card.is-purple::before {
+  background: linear-gradient(71.64deg, #2346B4 0%, #B414C8 100%);
+}
+
+.card:hover::before {
+  top: -80px;
+  left: -90px;
+  width: 600px;
+  height: 600px;
+  opacity: .8;
+}
+
+.card:hover .card__description,
+.card:hover .card__link,
+.card:hover .link-arrow {
+  opacity: 1;
+}
+
+.card:hover .card__company {
+  opacity: 1;
+  height: 12px;
+}
+
+.card:hover .card__likes {
+  margin-bottom: 8px;
+}
+
+.card__title {
+  position: relative;
+  z-index: 2;
+  margin: 0 0 20px;
+  font-family: 'PPR', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.card__title.is-short {
+  max-width: 200px;
+}
+
+.card__description {
+  position: relative;
+  z-index: 2;
+  max-width: 328px;
+  margin-bottom: auto;
+  font-family: 'SSPR', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+.card__footer {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 68px 175px 1fr;
+}
+
+.card__tag {
+  width: max-content;
+  padding: 2px 8px;
+  font-family: 'SSPR', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #302B3D;
+  background: #FFFFFF;
+  border-radius: 6px;
+  text-transform: lowercase;
+}
+
+.card__date {
+  align-self: center;
+  font-family: 'SSPR', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.card__link {
+  justify-self: flex-end;;
+  align-self: center;
+  margin-right: 4px;
+  font-family: 'SSPR', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(255,255,255, .5);
+  text-decoration: none;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+.link-arrow {
+  margin: 0 0 -1px 4px;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+.card__likes {
+  margin: auto 0 0;
+  transition: .3s ease-in-out;
+}
+
+.card__company {
+  margin-bottom: 12px;
+  opacity: 0;
+  height: 0;
+  transition: .3s ease-in-out;
+}
+
+.card__likes,
+.card__company {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-content: center;
+  font-family: 'SSPR', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.card__likes span,
+.card__company span {
+  margin-left: 4px;
+}
