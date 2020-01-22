@@ -10,7 +10,7 @@ export default class Card extends Component {
         <h2 className={`card__title ${title.length < 22 ? 'is-short' : ''}`}>{title}</h2>
 
         {description &&
-          <p className={`card__description`}>Невероятно низкие цены на самогонные аппараты только для своих!</p>}
+          <p className={`card__description`}>{description}</p>}
 
         {likes && <div className={`card__likes`}>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
